@@ -1,7 +1,11 @@
 from setuptools import setup
 
+def readme():
+    with open('README.md') as f:
+        return f.read()
+
 setup(name='lsalib',
-      version='0.10',
+      version='0.10.1',
       description='Basic Latent Semantic Analysis library',
       url='https://github.com/CrakeNotSnowman/LatentSemanticAnalysis/lsalib',
       author='Keith Murray',

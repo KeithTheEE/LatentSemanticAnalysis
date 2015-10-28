@@ -34,7 +34,7 @@ It was built to follow the Thesis of Sam Way, found here http://digitalcommons.u
 # With Strings:
 >>> lsa.add("HELLO WORLD! THE WIND RISES, WE MUST TRY TO LIVE")
 
-# With Dictionarys (a key:count relationship)
+# With Dictionaries (a key:count relationship)
 >>> lsa.add({"tree":5, "apple":3, "WORLD":8, "planes":2})
 
 # With lists of strings:
@@ -45,7 +45,7 @@ It was built to follow the Thesis of Sam Way, found here http://digitalcommons.u
 ```
 
 It's important to note that there is no processing done on any of the inputs. 
-This means the inputs are case sensative, any symbol such as a comman tied to a word will
+This means the inputs are case sensitive, any symbol such as a comma tied to a word will
 also be included in the term list. 
 Therefore "Apples", "apples", and "apples," are all treated as unique words.
 If this is undesirable, the strings will need to be preprocessed before lsa.add() is called.
@@ -61,14 +61,14 @@ As each document is added to the matrix, a term frequency weighting is applied.
 >>> lsa.weight_idf()
 
 # And once that has completed, use lsa.nmf to reduce the weighted term doc matrix 
-# to it's basis k componets for the terms and documents:
+# to it's basis k components for the terms and documents:
 >>> P, Q = lsa.nmf(5)
 
 # P is the basis vector set for the terms, and has a dimensionality of terms x k,
 
 # Q is the basis vector set for the documents, and has a dimensionality of docs x k,
 
-# P x Q.T will yeild an approximation of the orginal term document matrix with a certain error
+# P x Q.T will yield an approximation of the original term document matrix with a certain error
 
 # This error is stored in lsa.er
 >>> print lsa.er

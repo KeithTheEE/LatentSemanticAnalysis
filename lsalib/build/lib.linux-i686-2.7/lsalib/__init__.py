@@ -139,7 +139,7 @@ class termDocMatrix(object):
                     if self.mD[key][i] == 0:
                         idf = True
                         break
-            # CURRENTLY AN ERROR DUE TO TD WEIGHTING EARLIER
+            # CURRENTLY AN ERROR DUE TO TD WEIGHTING EARLIER: FIXED
             if (len(filter(None, self.mD[key])) >= self.wcThreshold) and idf == True:
                 self.terms.append(key)
                 self.tdm.append(self.mD[key])
