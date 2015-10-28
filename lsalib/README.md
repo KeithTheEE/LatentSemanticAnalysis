@@ -38,7 +38,7 @@ It was built to follow the Thesis of Sam Way, found here http://digitalcommons.u
 >>> lsa.add({"tree":5, "apple":3, "WORLD":8, "planes":2})
 
 # With lists of strings:
->>> lsa.add(["apples", "oranges", "apples", "WORLD", "HELLO")
+>>> lsa.add(["apples", "oranges", "apples", "WORLD", "HELLO"])
 
 # With lists of dictionaries which follow the key:count relationship:
 >>> lsa.add([D1, D2, D3, D4])
@@ -65,9 +65,7 @@ As each document is added to the matrix, a term frequency weighting is applied.
 >>> P, Q = lsa.nmf(5)
 
 # P is the basis vector set for the terms, and has a dimensionality of terms x k,
-
 # Q is the basis vector set for the documents, and has a dimensionality of docs x k,
-
 # P x Q.T will yield an approximation of the original term document matrix with a certain error
 
 # This error is stored in lsa.er
