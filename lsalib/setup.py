@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='lsalib',
-      version='0.10.2',
+      version='0.10.3',
       description='Basic Latent Semantic Analysis library',
       url='https://github.com/CrakeNotSnowman/LatentSemanticAnalysis/tree/master/lsalib',
       author='Keith Murray',
@@ -14,6 +14,7 @@ setup(name='lsalib',
       packages=['lsalib'],
       install_requires=[
           'numpy',
+	  'scipy',
           'sklearn',
       ],
       zip_safe=False)
