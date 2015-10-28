@@ -11,7 +11,7 @@ Python 2.7.6
 	Standard Libraries:
 	os, sys, and math
 	Added Libraries:
-	numpy, sklearn
+	numpy, scipy, sklearn
 
 Installation:
 =============
