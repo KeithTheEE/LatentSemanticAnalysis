@@ -7,7 +7,7 @@ def readme():
 setup(name='lsalib',
       version='0.10.2',
       description='Basic Latent Semantic Analysis library',
-      url='https://github.com/CrakeNotSnowman/LatentSemanticAnalysis/lsalib',
+      url='https://github.com/CrakeNotSnowman/LatentSemanticAnalysis/tree/master/lsalib',
       author='Keith Murray',
       author_email='kmurrayis@gmail.com',
       license='MIT',
